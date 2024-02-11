@@ -1,0 +1,207 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  gap: 2rem;
+}
+/*************************************************************/
+/*Header styling*/
+/*************************************************************/
+.container {
+  width: 100%;
+  height: 220px;
+  background-color: rgb(5, 39, 39);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.userData {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  color: white;
+  margin-left: 80px;
+  margin-top: 18px;
+}
+.user {
+  text-align: center;
+  margin-top: 20px;
+}
+.image img {
+  width: 100px;
+  height: 130px;
+}
+.userDetail a {
+  margin-left: 4px;
+  color: white;
+}
+.userDetail a:hover {
+  color: blue;
+}
+/*************************************************************/
+/* About us information*/
+/*************************************************************/
+.A {
+  font-size: 20px;
+  font-weight: 300;
+  width: 98%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+.About {
+  padding-top: 24px;
+  padding-left: 15px;
+  height: 140px;
+}
+.About:hover {
+  width: 100%;
+  height: 150px;
+}
+/*************************************************************/
+
+/*personal information styling*/
+/*************************************************************/
+
+.personal {
+  height: 200px;
+  padding-left: 18px;
+  padding-top: 24px;
+}
+.personal ul {
+  margin-left: 40px;
+}
+.personal:hover {
+  width: 100%;
+  height: 210px;
+}
+/*************************************************************/
+
+/*Education styling*/
+/*************************************************************/
+
+.education {
+  height: 150px;
+  padding-left: 18px;
+  padding-top: 24px;
+}
+.education ul {
+  margin-left: 36px;
+}
+.education:hover {
+  width: 100%;
+  height: 160px;
+}
+
+/*************************************************************/
+
+/*work experience styling*/
+/*************************************************************/
+
+.work {
+  height: 160px;
+  padding-left: 18px;
+  padding-top: 24px;
+}
+.work ul {
+  margin-left: 36px;
+}
+.work:hover {
+  width: 100%;
+  height: 170px;
+}
+/*************************************************************/
+
+/*project styling*/
+/*************************************************************/
+
+.project {
+  padding-left: 18px;
+  padding-top: 24px;
+  height: 510px;
+  transition: height, width 0.4s, 98%;
+}
+.project:hover {
+  width: 100%;
+  height: 520px;
+}
+
+.projInfo {
+  padding-left: 12px;
+  padding-top: 24px;
+}
+.projInfo h3 {
+  margin-top: 8px;
+}
+.projInfo p {
+  margin-left: 16px;
+  margin-top: 2px;
+}
+#schoolImage {
+  height: 100px;
+  width: 100px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.myButton {
+  margin-top: 12px;
+  width: 100px;
+  height: 35px;
+  margin-left: 16px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  transition-property: width;
+  transition-duration: 1s;
+}
+.myButton:hover {
+  width: 110px;
+}
+
+.myButton:hover::after {
+  content: "  >>";
+  right: 40px;
+  opacity: 2;
+}
+/*************************************************************/
+/*skills styling*/
+/*************************************************************/
+
+.skills {
+  padding-left: 25px;
+  padding-top: 24px;
+  height: 140px;
+}
+.skills ul {
+  margin-left: 36px;
+}
+.skills:hover {
+  width: 100%;
+  height: 150px;
+}
+/*************************************************************/
+/*Footer styling*/
+/*************************************************************/
+
+.foot {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(25, 63, 63);
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+  padding-top: 40px;
+}
