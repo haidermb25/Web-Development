@@ -1,0 +1,223 @@
+:root {
+  --primary: #0d6efd;
+  --dark: #21252f;
+  --body: #888;
+  --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  color: var(--body);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
+  color: var(--dark);
+  font-weight: bolder;
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+p {
+  font-size: large;
+  font-weight: 500;
+}
+
+.navbar {
+  box-shadow: var(--box-shadow);
+}
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 700;
+}
+.btn {
+  padding: 14px 18px;
+  border-width: 2px;
+}
+
+.hero {
+  background-image: url(bk.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+.hero::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(66, 65, 65, 0.4);
+  z-index: -1;
+}
+
+#section {
+  padding-top: 60px;
+}
+.card-effect {
+  box-shadow: var(--box-shadow);
+  background-color: white;
+  padding: 25px;
+  transition: all 0.35s ease;
+}
+.card-effect:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+.iconbar {
+  width: 54px;
+  height: 54px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  font-size: 32px;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+.service {
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
+}
+.service::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -100;
+  left: 0;
+  background-color: var(--primary);
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.service:hover .iconbar {
+  color: var(--primary);
+  background-color: white;
+}
+.service:hover h5,
+.service:hover p {
+  color: white;
+}
+
+.service:hover::after {
+  top: 0;
+  opacity: 1;
+}
+
+#features {
+  padding-top: 150px;
+}
+
+.col-img {
+  background-image: url(man.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 600px;
+}
+
+img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: var(--box-shadow);
+  border: 1px solid white;
+}
+img[src="view.png"] {
+  background-color: rgba(247, 247, 250, 0.788);
+}
+.project {
+  position: relative;
+  overflow: hidden;
+}
+.project .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 37, 37, 0.4);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  opacity: 0;
+}
+
+.project img {
+  transition: all 1s ease;
+}
+.project:hover .overlay {
+  opacity: 1;
+}
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.pricing i {
+  font-size: 20px;
+  color: var(--primary);
+}
+.pricing ul li {
+  margin-top: 8px;
+}
+.team-member img {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+.social-icon {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.social-icon a {
+  height: 60px;
+  width: 60px;
+  color: white;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  transition: all 1s ease;
+}
+.social-icon a:hover {
+  color: var(--primary);
+  background-color: white;
+  border: 2px solid var(--primary);
+}
+
+form input.form-control {
+  height: 56px;
+}
+form .form-control {
+  border: transparent;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer-top {
+  padding-bottom: 90px;
+  padding: 90px;
+  background-color: var(--dark);
+}
+.footer-top a {
+  color: var(--body);
+}
+
+.footer-top a:hover {
+  color: white;
+}

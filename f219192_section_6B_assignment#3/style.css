@@ -1,0 +1,20 @@
+* {
+  color: white;
+}
+.container-lg {
+  border: 8px solid black;
+  height: 466px;
+}
+.row {
+  background-color: rgb(121, 221, 55);
+  height: 400px;
+}
+.col {
+  border: 2px solid black;
+}
+.col-8 {
+  background-color: rgb(100, 100, 209);
+}
+.col-2 {
+  background-color: rgb(109, 19, 34);
+}
